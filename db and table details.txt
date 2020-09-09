@@ -1,0 +1,8 @@
+﻿db= cms
+table
+admin_tbl
+id  auto
+username   varchar20
+password    varchar100
+name          varchar20
+lastname    varchar20
