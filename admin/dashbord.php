@@ -1,8 +1,7 @@
 ﻿<?php
 include_once '../include/functions.php';
     if(!isset($_SESSION['username'])){
-        header("location:index.php?login=list");
-
+        header('location:index.php?login=first');
     }
 ?>
 <!DOCTYPE html>

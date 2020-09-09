@@ -26,6 +26,19 @@ ul{
 	padding:0px 0px;
 	margin:0px 0px;
 }
+
+ul,li{
+    list-style: none;
+}
+
+ul.drowpdownmenu li a{
+    list-style: none!important;
+    color: #fff!important;
+    font-size: 1.3em!important;
+    padding: 1em!important;
+    font-family: 'Yekan','Ubuntu Condensed', sans-serif!important;
+}
+
 body{
 	padding:0px 0px;
 	margin:0px 0px;
@@ -2464,4 +2477,10 @@ figure.effect-oscar figcaption {
     margin-top: 1em;
 }
 }
+
+
+}
+
+
+
 /**responsive**/

@@ -58,3 +58,25 @@ function editmenu($data,$id){
     $sql="UPDATE menu_tbl SET title='$data[title]',url='$data[url]',sort='$data[sort]',chid='$data[parent]',status='$data[status]' WHERE id='$id'";
     mysqli_query($connection,$sql);
 }
+function listmenudefault(){
+    $connection=config();
+    $sql="SELECT * FROM menu_tbl WHERE status='1' AND chid='0' ORDER BY sort ASC";
+    $row=mysqli_query($connection,$sql);
+    while($res=mysqli_fetch_assoc($row)){
+        $result[]=$res;
+    }
+    return $result;
+}
+function listsubmenudefault($id){
+    $connection=config();
+    $sql="SELECT * FROM menu_tbl WHERE status='1' AND chid='$id' ORDER BY sort ASC";
+    $row=mysqli_query($connection,$sql);
+
+
+    if (mysqli_num_rows($row)>0){
+    while($res=mysqli_fetch_assoc($row)){
+        $result[]=$res;
+    }
+    return $result;
+}
+}
