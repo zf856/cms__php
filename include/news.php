@@ -1,7 +1,7 @@
 <?php
 function addnews($data,$img){
     $connection=config();
-    $sql="INSERT INTO news_tbl (title,text,news_cat,img) VALUES ('$data[title]','$data[text]','$data[news_cat]','$img')";
+    $sql="INSERT INTO news_tbl (title,text,news_cat,img,date) VALUES ('$data[title]','$data[text]','$data[news_cat]','$img','$data[date]')";
     mysqli_query($connection,$sql);
 }
 function newscat(){
@@ -59,7 +59,7 @@ function editnews($data,$id,$img,$oldpic){
 
 function listnewsdefault(){
     $connection=config();
-    $sql="SELECT * FROM product_tbl";
+    $sql="SELECT * FROM news_tbl";
     $row=mysqli_query($connection,$sql);
     while($res=mysqli_fetch_assoc($row)){
         $result[]=$res;

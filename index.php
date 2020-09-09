@@ -263,75 +263,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="news-section">
         <div class="container">
             <h3>آخرین اخبار</h3>
+
+            <?php
+            $news=listnewsdefault();
+            foreach ($news as $value):
+            ?>
             <div class="news-grids wow fadeInLeft animated" data-wow-delay=".5s">
                 <div class="col-md-4 new-grid">
                     <div id="box" class="burst-circle teal">
                         <div class="caption"></div>
-                        <img src="images/n1.jpg" class="img-responsive"/>
+                        <img src="admin/<?php echo $value['img'];?>" class="img-responsive" width="200" height="200"/>
                         <h4> طرح‌نما </h4>
                     </div>
                 </div>
                 <div class="col-md-8 new-grid1 hvr-bounce-to-left">
-                    <h5><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i> 25 November 2015 </h5>
-                    <h4>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </h4>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
-                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                    <h5><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i> <?php echo $value['date'];?></h5>
+                    <h4><?php echo $value['title'];?> </h4>
+                     <p><?php echo $value['text'];?></p>
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="news-grids wow fadeInRight animated" data-wow-delay=".5s">
-                <div class="col-md-4 new-grid">
-                    <div id="box" class="burst-circle teal">
-                        <div class="caption"></div>
-                        <img src="images/n2.jpg" class="img-responsive"/>
-                        <h4> طرح‌نما </h4>
-                    </div>
-                </div>
-                <div class="col-md-8 new-grid1 hvr-bounce-to-left">
-                    <h5><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i> 25 November 2015 </h5>
-                    <h4>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </h4>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
-                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="news-grids wow fadeInLeft animated" data-wow-delay=".5s">
-                <div class="col-md-4 new-grid">
-                    <div id="box" class="burst-circle teal">
-                        <div class="caption"></div>
-                        <img src="images/n3.jpg" class="img-responsive"/>
-                        <h4> طرح‌نما </h4>
-                    </div>
-                </div>
-                <div class="col-md-8 new-grid1 hvr-bounce-to-left">
-                    <h5><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i> 25 November 2015 </h5>
-                    <h4>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </h4>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
-                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="news-grids wow fadeInRight animated" data-wow-delay=".5s">
-                <div class="col-md-4 new-grid">
-                    <div id="box" class="burst-circle teal">
-                        <div class="caption"></div>
-                        <img src="images/n4.jpg" class="img-responsive"/>
-                        <h4> طرح‌نما </h4>
-                    </div>
-                </div>
-                <div class="col-md-8 new-grid1 hvr-bounce-to-left">
-                    <h5><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i> 25 November 2015 </h5>
-                    <h4>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </h4>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
-                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
+            <?php endforeach;?>
         </div>
+
     </div>
     <!---news--->
     <!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->

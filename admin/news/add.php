@@ -21,6 +21,10 @@
                         <input type="text" name="frm[title]" class="form-control" placeholder="عنوان منو را وارد کنید">
                     </div>
                     <div class="form-group">
+                        <label for="exampleInputEmail1">تاریخ خبر</label>
+                        <input type="date" name="frm[date]" class="form-control" >
+                    </div>
+                    <div class="form-group">
                         <label for="exampleInputPassword1">توضیحات</label>
                         <textarea name="frm[text]" class="form-control ckeditor" rows="8"></textarea>
                     </div>
