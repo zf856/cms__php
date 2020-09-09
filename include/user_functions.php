@@ -10,8 +10,8 @@ function user_login($data){
 
     if($res['password']==$data['password']){
         //echo "a";
-        $_SESSION['username']=$res['name'];
-        header("location:dashbord.php");
+         $_SESSION['username']=$res['name'];
+      header("location:dashbord.php");
 
     }else{
 
