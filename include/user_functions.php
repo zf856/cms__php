@@ -7,4 +7,17 @@ function user_login($data){
     $row=mysqli_query($connection,$sql);
     $res=mysqli_fetch_assoc($row);
     //var_dump($res);
+
+    if($res['password']==$data['password']){
+        //echo "a";
+        $_SESSION['username']=$res['name'];
+        header("location:dashbord.php");
+
+    }else{
+
+        //echo "b";
+        header("location:index.php?login=error");
+
+
+    }
 }
