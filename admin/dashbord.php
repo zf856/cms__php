@@ -313,6 +313,17 @@ include_once '../include/menu.php';
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
                             <i class="icon-book"></i>
+                            <span>مدیریت صفحه ها</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="dashbord.php?m=page&p=list">لیست صفحه ها</a></li>
+                            <li><a class="" href="dashbord.php?m=page&p=add">افزودن صفحه جدید</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon-book"></i>
                             <span>دسته بندی محصولات </span>
                             <span class="arrow"></span>
                         </a>

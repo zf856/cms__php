@@ -70,18 +70,36 @@ $settings=settings();
 switch ($m){
     case 'index':
         include_once 'menu.php';
+        include_once 'widget.php';
+        include_once 'procat.php';
+        include_once 'products.php';
+        include_once 'newscat.php';
+        include_once 'news.php';
+        include_once 'contact.php';
+        break;
     case 'menu':
         include_once 'menu.php';
+        break;
+    case 'page':
+        include_once 'page.php';
+        break;
+
     case 'product_cat':
         include_once 'procat.php';
+        break;
     case 'product':
-         include_once 'products.php';
+        include_once 'products.php';
+        break;
     case 'news_cat':
         include_once 'newscat.php';
-   case 'news':
+        break;
+    case 'news':
         include_once 'news.php';
-   case 'contact':
-        include_once 'contact.php';
-   case 'widget':
+
+    case 'widget':
         include_once 'widget.php';
+        break;
+    case 'contact':
+        include_once 'contact.php';
+        break;
 }

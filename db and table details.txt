@@ -70,4 +70,13 @@ id int auto
 title varchar100
 img varchar100
 text text
+*********
+page
+
+page_tbl
+id int auto 
+title varchar100
+keywords varchar250
+description text
+body text
 
