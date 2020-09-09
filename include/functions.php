@@ -102,4 +102,7 @@ switch ($m){
     case 'contact':
         include_once 'contact.php';
         break;
+        case 'uploader':
+        include_once 'uploader.php';
+        break;
 }
