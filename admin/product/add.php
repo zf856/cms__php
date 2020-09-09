@@ -1,9 +1,15 @@
 <?php
     if(isset($_POST['btn'])){
         $data=$_POST['frm'];
-        $folder="pro-".rand();
-        $img=uploader('img',"images/products/",$folder,"product");
+//        1
+//        uploader('img',"aaa/","b");
+        //2
+//        uploader('img',"../images/products/","b","product");
+        //3
+       $img=uploader('img',"../images/products/", $data['title'],"product");
+       //var_dump($img);die;
         addpro($data,$img);
+
     }
 ?>
 

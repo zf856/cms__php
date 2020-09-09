@@ -9,12 +9,12 @@ if(isset($_POST['btn'])){
     header("location:dashbord.php?m=product&p=list");
 }
 ?>
-<h1 class="pageLables">افزودن محصول جدید</h1>
+<h1 class="pageLables">ویرایش محصول جدید</h1>
 <div class="row">
     <div class="col-lg-8 col-lg-offset-2" >
         <section class="panel">
             <header class="panel-heading">
-                افزودن محصول جدید به وب سایت
+                ویرایش محصول جدید به وب سایت
             </header>
             <div class="panel-body">
                 <form role="form" method="post" enctype="multipart/form-data">

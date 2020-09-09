@@ -236,65 +236,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <h3>
                 محصولات محبوب</h3>
             <div class="product-grids">
-                <div class="col-md-6 product-grid wow fadeInRight animated" data-wow-delay=".5s">
-                    <div class="product-right">
-                        <img src="images/p.jpg" class="img-responsive" alt=""/>
-                    </div>
-                    <div class="product-left">
-                        <h4>
-
-                            لورم ایپسوم یا طرح‌نما </h4>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و </p>
-                        <a href="gallery.html"><i class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="col-md-6 product-grid wow fadeInLeft animated" data-wow-delay=".5s">
-                    <div class="product-right">
-                        <img src="images/p1.jpg" class="img-responsive" alt=""/>
-                    </div>
-                    <div class="product-left">
-                        <h4>
-
-                            لورم ایپسوم یا طرح‌نما </h4>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و </p>
-                        <a href="gallery.html"><i class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="product-grids">
+                <?php
+                $product=listprodefault();
+                foreach ($product as $value):
+                ?>
                 <div class="col-md-6 product-grid1 wow fadeInRight animated" data-wow-delay=".5s">
                     <div class="product1-right">
-                        <h4>
-
-                            لورم ایپسوم یا طرح‌نما </h4>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و </p>
+                       <h4><?php echo $value['title'];?></h4>
+                       <p><?php echo $value['text'];?></p>
                         <a href="gallery.html"><i class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></i></a>
                     </div>
                     <div class="product1-left">
-                        <img src="images/p2.jpg" class="img-responsive" alt=""/>
+                        <img src="admin/<?php echo $value['img'];?>" class="img-responsive" alt=""/>
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <div class="col-md-6 product-grid1 wow fadeInLeft animated" data-wow-delay=".5s">
-                    <div class="product1-right">
-                        <h4>
+                <?php endforeach;?>
 
-                            لورم ایپسوم یا طرح‌نما </h4>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و </p>
-                        <a href="gallery.html"><i class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="product1-left">
-                        <img src="images/p3.jpg" class="img-responsive" alt=""/>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
                 <div class="clearfix"></div>
             </div>
         </div>

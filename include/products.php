@@ -22,10 +22,9 @@ function listproadmin(){
     }
     return $result;
 }
-
-function selectProCat($catid){
+function selectProcat($catid){
     $connection=config();
-    $sql="SELECT * FROM product_cat WHERE id=$catid";
+    $sql="SELECT * FROM product_cat WHERE id='$catid'";
     $row=mysqli_query($connection,$sql);
     $res=mysqli_fetch_assoc($row);
     return $res['title'];
@@ -42,17 +41,30 @@ function showeditpro($id){
     $res=mysqli_fetch_assoc($row);
     return $res;
 }
-function editpro($data,$id,$img,$oldpic){
+
+ function editpro($data,$id,$img,$oldpic){
+    //var_dump($_FILES[$img]);die;
+   //die($oldpic);
     if($_FILES[$img]['name']!=''){
-        $a=explode("/",$oldpic);
-        $total=count($a);
-        $folder=$a[$total-2];
-       $pic=uploader($img,"images/products/",$folder,"product");
+        //die('آپلود شد');
+
+        $pic=uploader($img,"../images/products/",$data['title'],"product");
     }
     else{
+        //die('آپلود نشد');
         $pic=$oldpic;
     }
     $connection=config();
     $sql="UPDATE product_tbl SET title='$data[title]',text='$data[text]',procat='$data[procat]',img='$pic' WHERE id='$id'";
     mysqli_query($connection,$sql);
+}
+
+function listprodefault(){
+    $connection=config();
+    $sql="SELECT * FROM product_tbl ";
+    $row=mysqli_query($connection,$sql);
+    while($res=mysqli_fetch_assoc($row)){
+        $result[]=$res;
+    }
+    return $result;
 }
