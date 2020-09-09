@@ -80,3 +80,11 @@ keywords varchar250
 description text
 body text
 
+*********
+uploader
+id int auto
+title varchar100
+img varchar100
+size int
+
+
