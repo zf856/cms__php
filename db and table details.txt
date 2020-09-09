@@ -1,8 +1,18 @@
 ﻿db= cms
 table
 admin_tbl
-id  auto
+id   int auto
 username   varchar20
 password    varchar100
 name          varchar20
 lastname    varchar20
+
+*********
+(table menu)
+menu_tbl
+id int auto 
+title varchar30
+url    varchar30
+sort int
+status Enum '0','1'
+chid int

@@ -1,6 +1,5 @@
 ﻿<?php
-
-session_start();
+include_once '../include/functions.php';
 if(!isset($_SESSION['username'])){
     header("location:index.php?login=first");
 }
@@ -381,14 +380,12 @@ if(!isset($_SESSION['username'])){
         <!--main content start-->
         <section id="main-content">
             <section class="wrapper">
-<!--ggggggggggg-->
+
                 <?php
 
-                $m=$_GET['m'];
-                $p=$_GET['p'];
-                include_once "$m/$p.php";
-
-               // dashbord.php?m=menu&p=add
+                     $m=$_GET['m'];
+                     $p=$_GET['p'];
+                     include_once "$m/$p.php";
                 ?>
             </section>
         </section>
