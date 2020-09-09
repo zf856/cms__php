@@ -1,7 +1,7 @@
 ﻿<?php
- include_once '../include/user_functions.php';
+    include_once '../include/user_functions.php';
     if(isset($_POST['btn'])){
-       $data=$_POST['frm'];
+        $data=$_POST['frm'];
         user_login($data);
     }
 ?>
