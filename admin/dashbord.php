@@ -354,6 +354,16 @@ include_once '../include/menu.php';
                             <li><a class="" href="dashbord.php?m=news&p=add">افزودن خبر  جدید  </a></li>
                         </ul>
                     </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon-book"></i>
+                            <span>تماس ها  </span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="dashbord.php?m=contact&p=list">لیست تماس  </a></li>
+                        </ul>
+                    </li>
 
                 </ul>
                 <!-- sidebar menu end-->

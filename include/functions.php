@@ -80,6 +80,6 @@ switch ($m){
         include_once 'newscat.php';
    case 'news':
         include_once 'news.php';
-//    case 'contact':
-//        include_once 'contact.php';
+   case 'contact':
+        include_once 'contact.php';
 }
