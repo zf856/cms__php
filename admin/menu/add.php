@@ -1,8 +1,8 @@
 <?php
-if(isset($_POST['btn'])){
-    $data=$_POST['frm'];
-    addmenu($data);
-}
+    if(isset($_POST['btn'])){
+        $data=$_POST['frm'];
+        addmenu($data);
+    }
 ?>
 
 <h1 class="pageLables">افزودن منو جدید</h1>

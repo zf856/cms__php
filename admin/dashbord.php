@@ -1,13 +1,9 @@
 ﻿<?php
 include_once '../include/functions.php';
-if(!isset($_SESSION['username'])){
-    header("location:index.php?login=first");
-}
-
+    if(!isset($_SESSION['username'])){
+        header('location:index.php?login=first');
+    }
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -150,7 +146,9 @@ if(!isset($_SESSION['username'])){
                                     <span class="photo">
                                         <img alt="avatar" src="img/avatar-mini.jpg"></span>
                                     <span class="subject">
-                                        <span class="from"><?php echo $_SESSION['username']; ?></span>
+                                        <span class="from">
+                                            <?php echo $_SESSION['username']; ?>
+                                        </span>
                                         <span class="time">همین حالا</span>
                                     </span>
                                     <span class="message">سلام،متن پیام نمایشی جهت تست
@@ -298,80 +296,23 @@ if(!isset($_SESSION['username'])){
                             <span>صفحه اصلی</span>
                         </a>
                     </li>
+
+
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
                             <i class="icon-book"></i>
-                            <span>مدیریت منو</span>
+                            <span>مدیریت منو ها</span>
                             <span class="arrow"></span>
                         </a>
                         <ul class="sub">
-                            <li><a class="" href="dashbord.php?m=menu&p=list">لیست منو</a></li>
-                            <li><a class="" href="dashbord.php?m=menu&p=add">افزودن منو</a></li>
-
+                            <li><a class="" href="dashbord.php?m=menu&p=list">لیست منو ها</a></li>
+                            <li><a class="" href="dashbord.php?m=menu&p=add">افزودن منو جدید</a></li>
                         </ul>
                     </li>
-<!--                    <li class="sub-menu">-->
-<!--                        <a href="javascript:;" class="">-->
-<!--                            <i class="icon-cogs"></i>-->
-<!--                            <span>کامنت ها</span>-->
-<!--                            <span class="arrow"></span>-->
-<!--                        </a>-->
-<!--                        <ul class="sub">-->
-<!--                            <li><a class="" href="grids.html">گرید</a></li>-->
-<!--                            <li><a class="" href="calendar.html">تقویم</a></li>-->
-<!--                            <li><a class="" href="charts.html">چارت</a></li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
-<!--                    <li class="sub-menu">-->
-<!--                        <a href="javascript:;" class="">-->
-<!--                            <i class="icon-tasks"></i>-->
-<!--                            <span>ابزارهای فرم</span>-->
-<!--                            <span class="arrow"></span>-->
-<!--                        </a>-->
-<!--                        <ul class="sub">-->
-<!--                            <li><a class="" href="form_component.html">کامنت فرم</a></li>-->
-<!--                            <li><a class="" href="form_wizard.html">فرم Wizard</a></li>-->
-<!--                            <li><a class="" href="form_validation.html">ارزیابی فرم</a></li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
-<!--                    <li class="sub-menu">-->
-<!--                        <a href="javascript:;" class="">-->
-<!--                            <i class="icon-th"></i>-->
-<!--                            <span>اطلاعات جدول</span>-->
-<!--                            <span class="arrow"></span>-->
-<!--                        </a>-->
-<!--                        <ul class="sub">-->
-<!--                            <li><a class="" href="basic_table.html">جدول ساده</a></li>-->
-<!--                            <li><a class="" href="dynamic_table.html">جدول داینامیک</a></li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <a class="" href="inbox.html">-->
-<!--                            <i class="icon-envelope"></i>-->
-<!--                            <span>ایمیل </span>-->
-<!--                            <span class="label label-danger pull-right mail-info">2</span>-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="sub-menu">-->
-<!--                        <a href="javascript:;" class="">-->
-<!--                            <i class="icon-glass"></i>-->
-<!--                            <span>عناصر اضافی</span>-->
-<!--                            <span class="arrow"></span>-->
-<!--                        </a>-->
-<!--                        <ul class="sub">-->
-<!--                            <li><a class="" href="blank.html">صفحه خالی</a></li>-->
-<!--                            <li><a class="" href="profile.html">پروفایل</a></li>-->
-<!--                            <li><a class="" href="invoice.html">فاکتور</a></li>-->
-<!--                            <li><a class="" href="404.html">404 Error</a></li>-->
-<!--                            <li><a class="" href="500.html">500 Error</a></li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <a class="" href="login.html">-->
-<!--                            <i class="icon-user"></i>-->
-<!--                            <span>صفحه ورود به سایت</span>-->
-<!--                        </a>-->
-<!--                    </li>-->
+
+
+
+
                 </ul>
                 <!-- sidebar menu end-->
             </div>
@@ -380,12 +321,10 @@ if(!isset($_SESSION['username'])){
         <!--main content start-->
         <section id="main-content">
             <section class="wrapper">
-
                 <?php
-
-                @$m=$_GET['m']?$_GET['m']:'index';
-                @$p=$_GET['p']?$_GET['p']:'index';
-                include_once "$m/$p.php";
+                    @$m=$_GET['m']?$_GET['m']:'index';
+                    @$p=$_GET['p']?$_GET['p']:'index';
+                    include_once "$m/$p.php";
                 ?>
             </section>
         </section>
