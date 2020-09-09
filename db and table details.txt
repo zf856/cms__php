@@ -63,3 +63,11 @@ email varchar50
 address text
 map varchar200
 
+************
+widget
+ widget_tbl
+id int auto
+title varchar100
+img varchar100
+text text
+

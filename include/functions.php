@@ -82,6 +82,6 @@ switch ($m){
         include_once 'news.php';
    case 'contact':
         include_once 'contact.php';
-   //case 'widget':
-        //include_once 'widget.php';
+   case 'widget':
+        include_once 'widget.php';
 }
