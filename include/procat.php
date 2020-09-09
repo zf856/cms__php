@@ -2,8 +2,6 @@
 
 function addproductCat($data){
     $connection=config();
-
-
     $sql="INSERT INTO product_cat (title,status,sort) VALUES ('$data[title]','$data[status]','$data[sort]')";
     mysqli_query($connection,$sql);
 }

@@ -22,9 +22,10 @@ function listproadmin(){
     }
     return $result;
 }
-function selectProcat($catid){
+
+function selectProCat($catid){
     $connection=config();
-    $sql="SELECT * FROM product_cat WHERE id='$catid'";
+    $sql="SELECT * FROM product_cat WHERE id=$catid";
     $row=mysqli_query($connection,$sql);
     $res=mysqli_fetch_assoc($row);
     return $res['title'];
@@ -41,17 +42,14 @@ function showeditpro($id){
     $res=mysqli_fetch_assoc($row);
     return $res;
 }
-
- function editpro($data,$id,$img,$oldpic){
-    //var_dump($_FILES[$img]);die;
-   //die($oldpic);
+function editpro($data,$id,$img,$oldpic){
     if($_FILES[$img]['name']!=''){
-        //die('آپلود شد');
-
-        $pic=uploader($img,"../images/products/",$data['title'],"product");
+        $a=explode("/",$oldpic);
+        $total=count($a);
+        $folder=$a[$total-2];
+       $pic=uploader($img,"images/products/",$folder,"product");
     }
     else{
-        //die('آپلود نشد');
         $pic=$oldpic;
     }
     $connection=config();

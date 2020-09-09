@@ -7,30 +7,27 @@
                 <table class="table table-striped table-advance table-hover">
                     <thead>
                     <tr>
-                        <th> نام محصول </th>
-                        <th> دسته بندی </th>
-                        <th> تصویر</th>
+                        <th> نام محصول</th>
+                        <th> دسته بندی</th>
+                        <th>تصویر </th>
                         <th>ویرایش</th>
                         <th>حذف</th>
                     </tr>
                     </thead>
                     <tbody>
                     <?php
-                        $listpro=listproadmin();
-                        foreach ($listpro as $val):
+                        $listPro=listproadmin();
+                        foreach ($listPro as $val):
                     ?>
                     <tr>
                         <td><?php echo $val['title']; ?></td>
                         <td><?php
 
-                            {
-                                $parent=selectProcat($val['procat']);
+                                $parent=selectProCat($val['procat']);
                                 echo $parent;
-                            }
                             ?>
                         </td>
-                        <td><img width="60" src="<?php echo $val['img']; ?>" alt=""></td>
-
+                        <td><img width="60"  src="<?php echo $val['img']; ?>"/></td>
                         <td><a href="dashbord.php?m=product&p=edit&id=<?php echo $val['id']; ?>" class="btn btn-primary btn-xs"><i class="icon-pencil"></i></a></td>
                         <td><a href="dashbord.php?m=product&p=delete&id=<?php echo $val['id']; ?>" class="btn btn-danger btn-xs"><i class="icon-trash "></i></a></td>
                     </tr>
