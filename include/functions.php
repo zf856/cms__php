@@ -10,7 +10,45 @@ session_start();
         mysqli_query($connect,"SET NAMES 'utf8'");
         return $connect;
     }
+//1
+//    function uploader($file,$dir,$folder){
+//        $file=$_FILES[$file];
+//        var_dump($file);
+//        var_dump($dir);
+//        var_dump($folder);die;
+//        mkdir($dir.$folder);
+//        if(!file_exists($folder)){
+//            mkdir($dir.$folder);
+//        }
+//        $filename=$file['name'];
+//        $array=explode(".",$filename);
+//          var_dump($array);die;
+//
+//  $ext=end($array);
+////
+//    }
+    //2
+    function uploader($file,$dir,$folder,$name){
+        $file=$_FILES[$file];
+//        var_dump($file);
+//        var_dump($dir);
+//        var_dump($folder);die;
+       // mkdir($dir.$folder);
+        if(!file_exists($folder)){
+            mkdir($dir.$folder);
+        }
+        $filename=$file['name'];
+        $array=explode(".",$filename);
+         // var_dump($array);die;
+        $ext=end($array);
+        $newname=$name."-".rand().".".$ext;
+        $from=$file['tmp_name'];
+        $to=$dir.$folder."/".$newname;
+        move_uploaded_file($from,$to);
+        return $to;
+    }
 
+    //2
 //    function uploader($file,$dir,$folder,$name){
 //        $file=$_FILES[$file];
 //        if(!file_exists($folder)){
@@ -18,6 +56,7 @@ session_start();
 //        }
 //        $filename=$file['name'];
 //        $array=explode(".",$filename);
+// var_dump($array);die;
 //        $ext=end($array);
 //        $newname=$name."-".rand().".".$ext;
 //        $from=$file['tmp_name'];

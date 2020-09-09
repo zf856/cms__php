@@ -2,6 +2,14 @@
     if(isset($_POST['btn'])){
         $data=$_POST['frm'];
         addpro($data);
+//        1
+//        uploader('img',"aaa/","b");
+        //2
+//        uploader('img',"../images/products/","b","product");
+        //3
+        uploader('img',"../images/products/", $data['title'],"product");
+
+
     }
 ?>
 
@@ -13,7 +21,7 @@
                 افزودن محصول جدید به وب سایت
             </header>
             <div class="panel-body">
-                <form role="form" method="post">
+                <form role="form" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="exampleInputEmail1">عنوان محصول</label>
                         <input type="text" name="frm[title]" class="form-control" placeholder="عنوان منو را وارد کنید">
