@@ -63,7 +63,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="index.html" class="wow fadeInDownBig" data-wow-delay=".1s">صفحه اصلی<span class="sr-only">(current)</span></a></li>
-								<li><a href="about.html" class="wow fadeInDownBig" data-wow-delay=".2s">درباره ما</a></li>
+								<li><a href="about.html" class="wow fadeInDownBig" data-wow-delay=".2s">درباره ما</a>
+
+                                    <ul class="nav navbar-nav">
+                                        <li class=""><a href="index.html" class="wow fadeInDownBig" data-wow-delay=".1s">صفحه اصلی1 <span class="sr-only">(current)</span></a></li>
+
+                                    </ul>
+                                </li>
 								<li><a href="services.html" class="wow fadeInDownBig" data-wow-delay=".4s">خدمات</a></li>
 								<li><a href="gallery.html" class="wow fadeInDownBig" data-wow-delay=".6s">گالری</a></li>
 								<li><a href="codes.html" class="wow fadeInDownBig" data-wow-delay=".7s">نمونه ها</a></li>

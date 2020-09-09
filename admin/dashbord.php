@@ -270,7 +270,7 @@ if(!isset($_SESSION['username'])){
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <img alt="" src="img/avatar1_small.jpg">
-                            <span class="username"><?php echo $_SESSION['username']."1111111111"; ?></span>
+                            <span class="username"><?php echo $_SESSION['username']; ?></span>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu extended logout">
@@ -383,9 +383,9 @@ if(!isset($_SESSION['username'])){
 
                 <?php
 
-                     $m=$_GET['m'];
-                     $p=$_GET['p'];
-                     include_once "$m/$p.php";
+                @$m=$_GET['m']?$_GET['m']:'index';
+                @$p=$_GET['p']?$_GET['p']:'index';
+                include_once "$m/$p.php";
                 ?>
             </section>
         </section>

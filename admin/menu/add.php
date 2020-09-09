@@ -1,8 +1,8 @@
 <?php
-    if(isset($_POST['btn'])){
-        $data=$_POST['frm'];
-        addmenu($data);
-    }
+if(isset($_POST['btn'])){
+    $data=$_POST['frm'];
+    addmenu($data);
+}
 ?>
 
 <h1 class="pageLables">افزودن منو جدید</h1>
@@ -25,14 +25,13 @@
                     <div class="form-group">
                         <label for="exampleInputPassword1">سرگروه</label>
                         <select class="form-control input-lg m-bot15" name="frm[parent]">
-                            <option value="7">1 </option>
-                            <option value="8">2 </option>
-<!--                            --><?php
-//                            $submenu=submenu();
-//                            foreach ($submenu as $subs){
-//                                echo "<option value=\"$subs[id]\">$subs[title] </option>";
-//                            }
-//                            ?>
+                            <option value="0">سرگروه </option>
+                            <?php
+                            $submenu=submenu();
+                            foreach ($submenu as $subs){
+                                echo "<option value=\"$subs[id]\">$subs[title] </option>";
+                            }
+                            ?>
 
 
                         </select>
