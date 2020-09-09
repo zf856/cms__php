@@ -1,5 +1,6 @@
 <?php
 $id=$_GET['id'];
+//echo $id;die;
 $result=showedit($id);
 
 if(isset($_POST['btn'])){
