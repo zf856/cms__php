@@ -357,6 +357,17 @@ include_once '../include/menu.php';
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
                             <i class="icon-book"></i>
+                            <span>ویجت زیر اسلاید </span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="dashbord.php?m=widget&p=list">لیست ویجت ها </a></li>
+                            <li><a class="" href="dashbord.php?m=widget&p=add">افزودن ویجت  جدید  </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon-book"></i>
                             <span>تماس ها  </span>
                             <span class="arrow"></span>
                         </a>

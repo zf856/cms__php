@@ -64,8 +64,8 @@ session_start();
 //        move_uploaded_file($from,$to);
 //        return $to;
 //    }
-//include_once 'settings.php';
-//$settings=settings();
+include_once 'settings.php';
+$settings=settings();
 @$m=$_GET['m']?$_GET['m']:'index';
 switch ($m){
     case 'index':
@@ -82,4 +82,6 @@ switch ($m){
         include_once 'news.php';
    case 'contact':
         include_once 'contact.php';
+   //case 'widget':
+        //include_once 'widget.php';
 }

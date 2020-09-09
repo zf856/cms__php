@@ -5,12 +5,16 @@ include_once 'include/functions.php';
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>قالب سایت کشاورزی</title>
+    <title>
+        <?php echo $settings['title'];?>
+
+    </title>
     <!---css--->
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
     <link href="css/style.css" rel='stylesheet' type='text/css'/>
     <!---css--->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<?php echo $settings['description'];?>">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content="Agrox Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design"/>
@@ -376,9 +380,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <p>خ ملک کوچه ایرانیاد</p>
                 <p>تلفن رایگان: +1 900 448 9990</p>
                 <p>
-                    تلفن: +1 459 503 7035</p>
-                <p>فکس: + 1 304 789 7898</p>
-                <a href="mailto:example@mail.com"> example@mail.com</a>
+                    تلفن:<?php echo $settings['tel'];?></p>
+                <p>فکس:         <?php echo $settings['fax'];?>
+                </p>
+                <a href="mailto:<?php echo $settings['email'];?>"><?php echo $settings['email'];?></a>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -396,8 +401,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <a href="#"><i class="icon2"></i></a>
         <a href="#"><i class="icon3"></i></a>
     </div>
-    <p>کلیه حقوق مادی و معنوی برای مجموعه برنامه نویسان محفوظ می باشد <a href="http://barnamenevisan.org/">برنامه
-            نویسان</a></p>
+    <p>
+        <?php echo $settings['copyright'];?>
+    </p>
 </div>
 </div>
 <!--copy-->

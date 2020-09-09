@@ -46,3 +46,20 @@ text text
 img varchar50
 news_cat int
 
+**************
+settings
+id int auto
+logo varchar50
+title varchar200
+description text
+copyright varchar200
+facebook varchar50
+instagram varchar50
+tel varchar30
+fax varchar50
+aboutus text
+logotype varchar50
+email varchar50
+address text
+map varchar200
+
