@@ -7,50 +7,32 @@
                 <table class="table table-striped table-advance table-hover">
                     <thead>
                     <tr>
-                        <th> عنوان منو</th>
-                        <th> عنوان سرگروه</th>
-                        <th> لینک منو</th>
-                        <th> ترتیب</th>
-                        <th> وضعیت</th>
+                        <th> نام محصول </th>
+                        <th> دسته بندی </th>
+                        <th> تصویر</th>
                         <th>ویرایش</th>
                         <th>حذف</th>
                     </tr>
                     </thead>
                     <tbody>
                     <?php
-                        $listmenu=listmenuadmin();
-                        foreach ($listmenu as $val):
+                        $listpro=listproadmin();
+                        foreach ($listpro as $val):
                     ?>
                     <tr>
                         <td><?php echo $val['title']; ?></td>
                         <td><?php
-                            if($val['chid']==0){
-                                echo "ندارد";
-                            }
-                            else{
-                                $parent=selectParentMenu($val['chid']);
+
+                            {
+                                $parent=selectProcat($val['procat']);
                                 echo $parent;
                             }
                             ?>
                         </td>
-                        <td><?php echo $val['url']; ?></td>
-                        <td><?php echo $val['sort']; ?></td>
-                        <td>
-                            <?php
-                            if($val['status']==0){
-                                echo "
-                                    <span class='btn btn-danger'>غیر فعال</span>
-                                ";
-                            }
-                            else{
-                                echo "
-                                    <span class='btn btn-success'> فعال</span>
-                                ";
-                            }
-                            ?>
-                        </td>
-                        <td><a href="dashbord.php?m=menu&p=edit&id=<?php echo $val['id']; ?>" class="btn btn-primary btn-xs"><i class="icon-pencil"></i></a></td>
-                        <td><a href="dashbord.php?m=menu&p=delete&id=<?php echo $val['id']; ?>" class="btn btn-danger btn-xs"><i class="icon-trash "></i></a></td>
+                        <td><img width="60" src="<?php echo $val['img']; ?>" alt=""></td>
+
+                        <td><a href="dashbord.php?m=product&p=edit&id=<?php echo $val['id']; ?>" class="btn btn-primary btn-xs"><i class="icon-pencil"></i></a></td>
+                        <td><a href="dashbord.php?m=product&p=delete&id=<?php echo $val['id']; ?>" class="btn btn-danger btn-xs"><i class="icon-trash "></i></a></td>
                     </tr>
                     <?php
                     endforeach;

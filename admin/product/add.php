@@ -1,14 +1,14 @@
 <?php
     if(isset($_POST['btn'])){
         $data=$_POST['frm'];
-        addpro($data);
 //        1
 //        uploader('img',"aaa/","b");
         //2
 //        uploader('img',"../images/products/","b","product");
         //3
-        uploader('img',"../images/products/", $data['title'],"product");
-
+       $img=uploader('img',"../images/products/", $data['title'],"product");
+       //var_dump($img);die;
+        addpro($data,$img);
 
     }
 ?>

@@ -23,9 +23,9 @@ session_start();
 //        $filename=$file['name'];
 //        $array=explode(".",$filename);
 //          var_dump($array);die;
+//        $ext=end($array);
 //
-//  $ext=end($array);
-////
+//
 //    }
     //2
     function uploader($file,$dir,$folder,$name){

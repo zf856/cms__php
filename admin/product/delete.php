@@ -1,5 +1,5 @@
 <?php
 $id=$_GET['id'];
-deletemenu($id);
-header("location:dashbord.php?m=menu&p=list");
+deletepro($id);
+header("location:dashbord.php?m=product&p=list");
 ?>
