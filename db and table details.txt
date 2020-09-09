@@ -23,3 +23,11 @@ id int auto
 title varchar30
 status Enum '0','1'
 sort int
+
+**
+product_tbl
+id int auto
+title varchar50
+text text
+procat int
+img varchar50

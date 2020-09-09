@@ -1,6 +1,5 @@
 <?php
 $id=$_GET['id'];
-//echo $id;die;
 $result=showedit($id);
 
 if(isset($_POST['btn'])){
@@ -64,7 +63,7 @@ if(isset($_POST['btn'])){
                         <label for="exampleInputPassword1">ترتیب نمایش</label>
                         <input type="text" name="frm[sort]" class="form-control" placeholder="ترتیب نمایش" value="<?php echo $result['sort']; ?>">
                     </div>
-                    <button type="submit" name="btn" class="btn btn-info">افزودن</button>
+                    <button type="submit" name="btn" class="btn btn-info">ویرایش</button>
                 </form>
 
             </div>
