@@ -16,3 +16,10 @@ url    varchar30
 sort int
 status Enum '0','1'
 chid int
+***********
+product
+product_cat
+id int auto
+title varchar30
+status Enum '0','1'
+sort int

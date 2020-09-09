@@ -93,7 +93,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                                 ?>
 
-                                <ul class="drowpdown-menu">
+                                <ul class="drowpdownmenu">
                                     <?php
 
 //                                    $rows = listsubmenudefault($val['id']);

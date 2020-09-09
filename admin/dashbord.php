@@ -309,7 +309,17 @@ include_once '../include/functions.php';
                             <li><a class="" href="dashbord.php?m=menu&p=add">افزودن منو جدید</a></li>
                         </ul>
                     </li>
-
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon-book"></i>
+                            <span>دسته بندی محصولات </span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="dashbord.php?m=product_cat&p=list">لیست دسته بندی  </a></li>
+                            <li><a class="" href="dashbord.php?m=product_cat&p=add">افزودن دسته بندی  جدید  </a></li>
+                        </ul>
+                    </li>
 
 
 

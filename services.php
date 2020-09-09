@@ -1,4 +1,3 @@
-<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -23,7 +22,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			new WOW().init();
 		</script>
 	<!--//end-animate-->
-<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
 <!---webfont--->
 <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -74,84 +72,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---banner-->
 	<!---welcome-->
 	<div class="content">
-	<!-- services -->
-	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
-			<div class="services">
-				<div class="container">
-					<h2>خدمات</h2>
-					<div class="services-grids" dir=ltr>
-						<div class="col-md-3 ser-grid wow fadeInRight animated" data-wow-delay=".5s">
-							<h4>
-
-لورم ایپسوم یا طرح‌نما</h4>
-							<ul>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</li>
-									<li>لورم ایپسوم متن ساختگی با تولید سادگی</li>
-									<li>لورم ایپسوم متن ساختگی با تولید سادگی</li>
-									<li>لورم ایپسوم متن ساختگی با تولید سادگی</li>
-									<li>لورم ایپسوم متن ساختگی با تولید سادگی</li>
-							</ul>
-						</div>
-						<div class="col-md-3 ser-grid wow fadeInUpBig animated" data-wow-delay=".5s">
-							<h4>
-
-لورم ایپسوم یا طرح‌نما</h4>
-							<ul>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-							</ul>
-						</div>
-						<div class="col-md-3 ser-grid wow fadeInDownBig animated" data-wow-delay=".5s">
-							<h4>
-
-لورم ایپسوم یا طرح‌نما</h4>
-							<ul>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-							</ul>
-						</div>
-						<div class="col-md-3 ser-grid wow fadeInLeft animated" data-wow-delay=".5s">
-							<h4>
-
-لورم ایپسوم یا طرح‌نما</h4>
-							<ul>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-								<li>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-							</ul>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-			<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
 		<div class="overview">
 			<div class="container">
-				<h3>خدمات کلی</h3>
+				<h3>لیست محصولات</h3>
 				<div class="overview-grids">
 					<div class="col-md-3 list-grid wow fadeInLeft animated" data-wow-delay=".5s">
 						<div class="list-img">
 							<img src="images/n1.jpg" alt=" " />
 							<div class="textbox"></div>
-						</div>						
-						<h4>
-
-لورم ایپسوم</h4>
-						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-					</div>
-					<div class="col-md-3 list-grid wow fadeInRight animated" data-wow-delay=".5s">
-						<div class="list-img">
-							<img src="images/n2.jpg" alt=" " />
-							<div class="textbox"></div>
-						</div>	
+						</div>
 						<h4>
 
 لورم ایپسوم</h4>
@@ -159,114 +88,48 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="col-md-3 list-grid wow fadeInLeft animated" data-wow-delay=".5s">
 						<div class="list-img">
-							<img src="images/n3.jpg" alt=" " />
+							<img src="images/n1.jpg" alt=" " />
 							<div class="textbox"></div>
-						</div>	
+						</div>
 						<h4>
 
-لورم ایپسوم</h4>
+							لورم ایپسوم</h4>
 						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
 					</div>
-					<div class="col-md-3 list-grid wow fadeInRight animated" data-wow-delay=".5s">
+					<div class="col-md-3 list-grid wow fadeInLeft animated" data-wow-delay=".5s">
 						<div class="list-img">
-							<img src="images/n4.jpg" alt=" " />
+							<img src="images/n1.jpg" alt=" " />
 							<div class="textbox"></div>
-						</div>	
+						</div>
 						<h4>
 
-لورم ایپسوم</h4>
-						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد </p>
+							لورم ایپسوم</h4>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+					</div>
+					<div class="col-md-3 list-grid wow fadeInLeft animated" data-wow-delay=".5s">
+						<div class="list-img">
+							<img src="images/n1.jpg" alt=" " />
+							<div class="textbox"></div>
+						</div>
+						<h4>
+
+							لورم ایپسوم</h4>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+					</div>
+					<div class="col-md-3 list-grid wow fadeInLeft animated" data-wow-delay=".5s">
+						<div class="list-img">
+							<img src="images/n1.jpg" alt=" " />
+							<div class="textbox"></div>
+						</div>
+						<h4>
+
+							لورم ایپسوم</h4>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>
-		<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
-		<div class="main-services">
-			<div class="container">
-				<h3>
-خدمات اصلی</h3>
-				<div class="services-grids">
-						<div class="col-md-4 services-grid wow fadeInLeft animated" data-wow-delay=".5s">
-							<div class="services-right">
-								<p>01</p>
-							</div>
-							<div class="services-left">
-								<h4>
-
-لورم ایپسوم یا طرح‌نما </h4>
-								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="col-md-4 services-grid wow fadeInUpBig animated" data-wow-delay=".5s">
-							<div class="services-right">
-								<p>02</p>
-							</div>
-							<div class="services-left">
-								<h4>
-
-لورم ایپسوم یا طرح‌نما </h4>
-								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="col-md-4 services-grid wow fadeInLeft animated" data-wow-delay=".5s">
-							<div class="services-right">
-								<p>03</p>
-							</div>
-							<div class="services-left">
-								<h4>
-
-لورم ایپسوم یا طرح‌نما </h4>
-								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="col-md-4 services-grid wow fadeInRight animated" data-wow-delay=".5s">
-							<div class="services-right">
-								<p>04</p>
-							</div>
-							<div class="services-left">
-								<h4>
-
-لورم ایپسوم یا طرح‌نما </h4>
-								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="col-md-4 services-grid wow fadeInDownBig animated" data-wow-delay=".5s">
-							<div class="services-right">
-								<p>05</p>
-							</div>
-							<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
-							<div class="services-left">
-								<h4>
-
-لورم ایپسوم یا طرح‌نما </h4>
-								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="col-md-4 services-grid wow fadeInLeft animated" data-wow-delay=".5s">
-							<div class="services-right">
-								<p>06</p>
-							</div>
-							<div class="services-left">
-								<h4>
-
-لورم ایپسوم یا طرح‌نما </h4>
-								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="clearfix"></div>
-				</div>
-				
-			</div>
-		</div>
-<!-- //services -->
-<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
 	</div>
 	<!---footer--->
 		<div class="footer-section">
