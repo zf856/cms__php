@@ -332,8 +332,28 @@ include_once '../include/menu.php';
                             <li><a class="" href="dashbord.php?m=product&p=add">افزودن محصول  جدید  </a></li>
                         </ul>
                     </li>
-
-
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon-book"></i>
+                            <span>دسته بندی خبرها </span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="dashbord.php?m=news_cat&p=list">لیست دسته بندی  </a></li>
+                            <li><a class="" href="dashbord.php?m=news_cat&p=add">افزودن دسته بندی  جدید  </a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon-book"></i>
+                            <span>مدیریت اخبار </span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="dashbord.php?m=news&p=list">لیست اخبار  </a></li>
+                            <li><a class="" href="dashbord.php?m=news&p=add">افزودن خبر  جدید  </a></li>
+                        </ul>
+                    </li>
 
                 </ul>
                 <!-- sidebar menu end-->

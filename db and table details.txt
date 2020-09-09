@@ -31,3 +31,18 @@ title varchar50
 text text
 procat int
 img varchar50
+
+********
+news
+**
+news_cat
+id int auto
+title varchar50
+**
+news_tbl
+id int auto
+title varchar50
+text text 
+img varchar50
+news_cat int
+

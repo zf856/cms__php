@@ -76,10 +76,10 @@ switch ($m){
         include_once 'procat.php';
     case 'product':
          include_once 'products.php';
-//    case 'news_cat':
-//        include_once 'newscat.php';
-//    case 'news':
-//        include_once 'news.php';
+    case 'news_cat':
+        include_once 'newscat.php';
+   case 'news':
+        include_once 'news.php';
 //    case 'contact':
 //        include_once 'contact.php';
 }
